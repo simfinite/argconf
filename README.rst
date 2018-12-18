@@ -19,10 +19,9 @@ but include any user input given via the commandline:
 Your script will now feature a generated commandline interface, which you can
 checkout by running ``your_script.py --help``.
 
-In order to get *tab completion*, argcomplete has to be globally activated (see
-[https://argcomplete.readthedocs.io/en/latest/#activating-global-completion]).
-Also, '# PYTHON_ARGCOMPLETE_OK' has to added to the script's header comment
-block.
+In order to get *tab completion* via [argcomplete](https://pypi.org/project/argcomplete/)
+    - argcomplete has to be [globally activated](https://argcomplete.readthedocs.io/en/latest/#activating-global-completion),
+    - add ``# PYTHON_ARGCOMPLETE_OK`` to the script's header comment block.
 
 TODO
 ----

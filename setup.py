@@ -2,17 +2,19 @@
 
 """Setup script for argconf
 
+Run unit tests:
+python setup.py test
+
 Build source distribution:
 python setup.py sdist
 
 Build wheel distribution:
 python setup.py bdist_wheel --universal
 
+Note: This setup.py script follows official reference guides:
+    - https://packaging.python.org/tutorials/packaging-projects/
+    - https://packaging.python.org/guides/distributing-packages-using-setuptools/
 """
-
-# Note: This setup.py script follows official reference guides:
-# https://packaging.python.org/tutorials/packaging-projects/
-# https://packaging.python.org/guides/distributing-packages-using-setuptools/
 
 
 import setuptools
@@ -23,9 +25,12 @@ with open('README.rst') as f:
 with open('LICENSE.txt') as f:
     license = f.read()
 
+with open('VERSION.txt') as f:
+    version = f.read().strip()
+
 setuptools.setup(
     name='argconf',
-    version='0.0.1.dev1',
+    version=version,
     description='Generate commandline interfaces for your Python scripts from YAML configuration files',
     long_description=readme,
     long_description_content_type='text/x-rst',
