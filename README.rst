@@ -18,6 +18,7 @@ Your script will now feature a generated commandline interface, which you can
 checkout by running ``your_script.py --help``.
 
 In order to get *tab completion* via `argcomplete <https://pypi.org/project/argcomplete/>`_
+
     - argcomplete has to be `globally activated <https://argcomplete.readthedocs.io/en/latest/#activating-global-completion>`_,
     - add ``# PYTHON_ARGCOMPLETE_OK`` to the script's header comment block.
 
