@@ -9,18 +9,16 @@ configuration files. It is based on argparse and argcomplete.
 
 After writing a YAML configuration file for your script, add the following line
 to retrieve a configuration dictionary that will default to the file's content,
-but include any user input given via the commandline:
+but include any user input given via the commandline::
 
-``
     import argconf
     config = argconf.parse('your_config.yaml')
-``
 
 Your script will now feature a generated commandline interface, which you can
 checkout by running ``your_script.py --help``.
 
-In order to get *tab completion* via [argcomplete](https://pypi.org/project/argcomplete/)
-    - argcomplete has to be [globally activated](https://argcomplete.readthedocs.io/en/latest/#activating-global-completion),
+In order to get *tab completion* via `argcomplete <https://pypi.org/project/argcomplete/>`_
+    - argcomplete has to be `globally activated <https://argcomplete.readthedocs.io/en/latest/#activating-global-completion>`_,
     - add ``# PYTHON_ARGCOMPLETE_OK`` to the script's header comment block.
 
 TODO
